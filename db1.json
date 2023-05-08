@@ -1,32 +1,46 @@
 {
-
-
-    "reclutas":[
-        
-        
-    ],
-
-
-    "team":[
-
-
-    ],
-
-    "skill":[
-
-
-    ],
-
-
-    "moduloSkill":[
-
-
-    ],
-
-
-    "evaluacion":[
-
-
-    ]
-
+  "reclutas": [
+    {
+      "nombre": "ANDRES GALVIS",
+      "edad": 23,
+      "telefono": "3223218127",
+      "direccion": "AV. bucarica ",
+      "fechaNac": "2000-08-30",
+      "identificacion": 1007438904,
+      "fechaIngre": "2023-02-01",
+      "team": 3,
+      "id": 1
+    },
+    {
+      "nombre": "JUNIOR C",
+      "edad": 18,
+      "telefono": "3155113022",
+      "direccion": "AV. bucarica ",
+      "fechaNac": "2004-02-08",
+      "identificacion": 123213123,
+      "fechaIngre": "2023-02-01",
+      "team": 3,
+      "id": 2
+    }
+  ],
+  "team": [
+    {
+      "nombre": "ARTEMIS",
+      "trainer": "VERMEN",
+      "id": 1
+    },
+    {
+      "nombre": "APOLO",
+      "trainer": "JHOLVER",
+      "id": 2
+    },
+    {
+      "nombre": "SPUTNIK",
+      "trainer": "MIGUEL",
+      "id": 3
+    }
+  ],
+  "skill": [],
+  "moduloSkill": [],
+  "evaluacion": []
 }

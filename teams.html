@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://kit.fontawesome.com/932c26312f.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/teams.js" type="module" defer></script>
   <title>TEAMS</title>
 </head>
 
@@ -64,7 +65,7 @@
       <div class="row mt-4">
         <div class="col-4 col-md-4 d-flex align-items-center">
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-success ms-1 ms-md-5" data-bs-toggle="modal" data-bs-target="#cRecluta">Success</button>
+          <button type="button" class="btn btn-success ms-1 ms-md-5" data-bs-toggle="modal" data-bs-target="#cTeam">Registrar</button>
         </div>
         <div class="col-8 col-md-8 d-flex align-items-center">
             <input id="buscar" type="text" class="text-center" placeholder="Buscar" >
@@ -77,33 +78,17 @@
 
   <section>
     <div class="container tablas1 mt-5 rounded  p-1 p-md-5">
-      <table class="table text-light">
+      <table class="table text-light text-center">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nombre Team</th>
+            <th scope="col">Nombre Trainer</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+        <tbody id="bodyTeams">
+         
         </tbody>
       </table>
     </div>
@@ -114,25 +99,57 @@
   
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="cRecluta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal registro -->
+  <div class="modal fade" id="cTeam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header bg-dark">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">REGISTRAR TEAM</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body bg-dark">
-          ...
+          <form id="team">
+            <div class="mb-3">
+                <label for="nombre" class="form-label text-light">Nombre de team</label>
+                <input type="text" required name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="trainer" class="form-label text-light">Nombre de Trainer</label>
+              <input type="text" required  name="trainer" class="form-control" id="trainer" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Update -->
+  <div class="modal fade" id="cTeamUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">ACTUALIZAR TEAM</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <form id="teamU">
+            <div class="mb-3">
+                <label for="nombreUp" class="form-label text-light">Nombre de team</label>
+                <input type="text" required name="nombre" class="form-control" id="nombreUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="trainerUp" class="form-label text-light">Nombre de Trainer</label>
+              <input type="text" required name="trainer" class="form-control" id="trainerUp" aria-describedby="emailHelp">
+            </div>
+            <input type="hidden" name="id" class="form-control" id="idUp" value="" aria-describedby="emailHelp">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
         </div>
       </div>
     </div>
   </div>
 
 
-
-
-
 </body>
-
 </html>
