@@ -33,7 +33,6 @@ let ws = {
         });
 
         return html;
-
     },
 
     async getRegisterForUpdate(id){

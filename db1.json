@@ -30,7 +30,24 @@
       "id": 3
     }
   ],
-  "skill": [],
+  "skill": [
+    {
+      "nombre": "JAVA",
+      "id": 1
+    },
+    {
+      "nombre": "JAVASCRIPT",
+      "id": 2
+    },
+    {
+      "nombre": "PYTHON",
+      "id": 3
+    },
+    {
+      "nombre": "NODE JS",
+      "id": 4
+    }
+  ],
   "moduloSkill": [],
   "evaluacion": []
 }
