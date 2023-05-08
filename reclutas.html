@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"
+    async></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://kit.fontawesome.com/932c26312f.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/reclutas.js" type="module" defer></script>
+  <title>RECLUTAS</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navs">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/R-removebg-preview.png" class="card-img-top ms-1 ms-md-5 logo" alt="...">
+        </a>
+        <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-md-5 divmenu " id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " aria-current="page" href="reclutas.html">Reclutas</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="modulskill.html">Modulos Skills</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="evaluacion.html">Evaluacion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- seccion de  reclutas -->
+  <section>
+    <div class="container mt-5 tablas1 rounded pb-5">
+
+      <div class="row">
+
+        <h1 class="mt-4 ms-md-5 text-light">RECLUTAS</h1>
+      </div>
+      <div class="row mt-4 ">
+        <div class="col-4 col-md-4 d-flex align-items-center">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success ms-md-5" data-bs-toggle="modal"
+            data-bs-target="#cRecluta">Success</button>
+        </div>
+        <div class="col-8 col-md-8  d-flex align-items-center">
+          <input id="buscar" type="text" class="text-center" placeholder="Buscar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion tabla -->
+  <section>
+    <div class="container tablas1 mt-5 rounded p-1 p-md-5">
+      <table class="table text-light">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>
+              <button type="button" class="btn btn-info btns info" data-category="${element.id}">
+                <i class="fa-solid fa-circle-info infos info" data-category="${element.id}"></i>
+              </button>
+              <button type="button" class="btn btn-warning btns edit" data-category="${element.id}"
+                data-bs-toggle="modal" data-bs-target="#modalUpdate">
+                <i class="fa-solid fa-pen-to-square infos edit" style="color: #ffffff;"
+                  data-category="${element.id}"></i>
+              </button>
+              <button type="button" class="btn btn-danger btns drop" data-category="${element.id}">
+                <i class="fa-solid fa-trash infos drop" style="color: #ffffff;" data-category="${element.id}"></i>
+              </button>
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- Modal  Registro-->
+  <div class="modal fade" id="cRecluta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">AGREGAR RECLUTA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark " id="modalCR">
+          <form id="recluta">
+            <div class="mb-2">
+              <label for="nombre" class="form-label text-light">Nombre</label>
+              <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="edad" class="form-label text-light">Edad</label>
+              <input type="text" name="edad" class="form-control" id="edad" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="telefono" class="form-label text-light">Telefono</label>
+              <input type="text" name="telefono" class="form-control" id="telefono" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="direccion" class="form-label text-light">Direccion</label>
+              <input type="text" name="direccion" class="form-control" id="direccion" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="fechaNac" class="form-label text-light">Fecha Nacimiento</label>
+              <input type="date" name="fechaNac" class="form-control" id="fechaNac" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="identificacion" class="form-label text-light"># Identificacion</label>
+              <input type="text" name="identificacion" class="form-control" id="identificacion"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="fechaIngre" class="form-label text-light">Fecha ingreso Programa</label>
+              <input type="date" name="fechaIngre" class="form-control" id="fechaIngre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" name="team" aria-label="Default select example">
+                <option selected>Seleccione un team</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal  Update -->
+  <div class="modal fade" id="cReclutaUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">AGREGAR RECLUTA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark " id="modalCRU">
+          <form id="reclutaUp">
+            <input type="hidden" name="id" class="form-control" id="idUp" value="" aria-describedby="emailHelp">
+            <div class="mb-2">
+              <label for="nombreUp" class="form-label text-light">Nombre</label>
+              <input type="text" name="nombre" class="form-control" id="nombreUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="edadUp" class="form-label text-light">Edad</label>
+              <input type="text" name="edad" class="form-control" id="edadUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="telefonoUp" class="form-label text-light">Telefono</label>
+              <input type="text" name="telefono" class="form-control" id="telefonoUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="direccionUp" class="form-label text-light">Direccion</label>
+              <input type="text" name="direccion" class="form-control" id="direccionUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="fechaNacUp" class="form-label text-light">Fecha Nacimiento</label>
+              <input type="date" name="fechaNac" class="form-control" id="fechaNacUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="identificacionUp" class="form-label text-light"># Identificacion</label>
+              <input type="text" name="identificacion" class="form-control" id="identificacionUp"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="fechaIngreUp" class="form-label text-light">Fecha ingreso Programa</label>
+              <input type="date" name="fechaIngre" class="form-control" id="fechaIngreUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" name="team" aria-label="Default select example" id="teamUp">
+                <option selected>Seleccione un team</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

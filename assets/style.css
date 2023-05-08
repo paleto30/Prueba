@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(/img/fondo.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.eval{
+    background-image: url(/img/fondo1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navs {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.divmenu {
+    margin-right: 10rem !important;
+    color: white;
+}
+
+
+.logo {
+    width: 5rem;
+}
+
+.ancor {
+    width: 100% !important;
+}
+
+.menuss{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menuss :hover {
+    color: purple !important;
+}
+
+.titulo {
+    color: white;
+    font-size: 2rem;
+}
+
+
+.filaAbout {
+    margin-top: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+
+.poster {
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about{
+    font-size: 2rem;
+}
+
+.parrafo{
+    font-size: 1.4rem;
+}
+
+
+.tablass{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tablas1{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+
+@media screen and (mix-width: 300px) {
+
+    .logo {
+        width: 3.2rem;
+    }
+    .filaAbout{
+        border-radius: 0rem;
+        margin-top: 1rem !important;
+    }
+
+    .about{
+        font-size: 1.1rem;
+    }
+    
+    .parrafo{
+        font-size: .8rem;
+    }
+
+    .titulo {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo {
+        width: 3.5rem;
+    }
+    .filaAbout{
+        border-radius: 0rem;
+        margin-top: 1rem !important;
+    }
+
+    .about{
+        font-size: 1.1rem;
+    }
+    
+    .parrafo{
+        font-size: .8rem;
+    }
+
+    .titulo {
+        font-size: 1.1rem;
+        margin-top: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        width: 5rem;
+    }
+
+    .divmenu {
+        margin-right: 10rem !important;
+        color: white;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .divmenu {
+        margin-right: 0px !important;
+        color: white;
+    }
+}

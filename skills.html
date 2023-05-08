@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"
+    async></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://kit.fontawesome.com/932c26312f.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>SKILLS</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navs">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="img/R-removebg-preview.png" class="card-img-top ms-1 ms-md-5 logo" alt="...">
+        </a>
+        <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-md-5 divmenu " id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " aria-current="page" href="reclutas.html">Reclutas</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="modulskill.html">Modulos Skills</a>
+            </li>
+            <li class="nav-item text-center menuss">
+              <a class="nav-link text-light fs-6 " href="evaluacion.html">Evaluacion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- seccion de  reclutas -->
+  <section>
+    <div class="container mt-5 tablas1 rounded pb-5">
+
+      <div class="row">
+        <h1 class=" mt-md-4 ms-md-5 text-light">SKILLS</h1>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4 col-md-4 d-flex align-items-center">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success ms-md-5" data-bs-toggle="modal" data-bs-target="#cRecluta">Success</button>
+        </div>
+        <div class="col-8 col-md-8 d-flex align-items-center">
+            <input id="buscar" type="text" class="text-center" placeholder="Buscar" >
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- seccion tabla -->
+
+  <section>
+    <div class="container tablas1 mt-5 rounded  p-1 p-md-5">
+      <table class="table text-light">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+
+  
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cRecluta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
