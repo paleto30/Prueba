@@ -54,7 +54,6 @@ export default{
     },
 
     accionUpdateTable() {
-
         const tabla = document.querySelector("#bodyTeams");
         tabla.addEventListener('click', (e) => {
             if (e.target.classList.contains("edit")) {
@@ -101,7 +100,7 @@ export default{
     },
 
 
-    async searchByName(){
+    searchByName(){
         const buscar = document.querySelector("#buscar");
         buscar.addEventListener("input",(e)=>{
             if (!buscar.value) {

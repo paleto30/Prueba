@@ -2,25 +2,15 @@
   "reclutas": [
     {
       "nombre": "ANDRES GALVIS",
-      "edad": 23,
+      "imagen": "https://thumbs.dreamstime.com/b/hombre-joven-atractivo-7958303.jpg",
+      "edad": 22,
       "telefono": "3223218127",
       "direccion": "AV. bucarica ",
-      "fechaNac": "2000-08-30",
+      "fechaNac": "2023-05-08",
       "identificacion": 1007438904,
-      "fechaIngre": "2023-02-01",
+      "fechaIngre": "2023-05-03",
       "team": 3,
       "id": 1
-    },
-    {
-      "nombre": "JUNIOR C",
-      "edad": 18,
-      "telefono": "3155113022",
-      "direccion": "AV. bucarica ",
-      "fechaNac": "2004-02-08",
-      "identificacion": 123213123,
-      "fechaIngre": "2023-02-01",
-      "team": 3,
-      "id": 2
     }
   ],
   "team": [

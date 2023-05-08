@@ -69,7 +69,7 @@ export const updateOneRecluta = async (recluta)=>{
 // filtrar registros por el campo name 
 export const searchRegistersLike = async (text)=>{
     try {
-        const data = await fetch(`${url}?q=${text}`);
+        const data = await fetch(`${url}?nombre_like=${text}`);
         const result = await data.json();
         return result;
     } catch (error) {

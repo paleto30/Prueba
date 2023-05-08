@@ -1,6 +1,6 @@
 import {
     getAllTeams,
-    getOneById,
+    getOneTeamById,
     searchRegistersLike
 } from '../api/APIteam.js';
 
@@ -37,7 +37,7 @@ let ws = {
     },
 
     async getRegisterForUpdate(id){
-        const data = await getOneById(id);
+        const data = await getOneTeamById(id);
         return data;
     },
 

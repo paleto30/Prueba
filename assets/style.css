@@ -82,6 +82,9 @@ body {
     background-color: rgba(0, 0, 0, 0.616);
 }
 
+.items{
+    list-style: none;
+}
 
 @media screen and (mix-width: 300px) {
 

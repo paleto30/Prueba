@@ -14,7 +14,7 @@ export const getAllTeams = async ()=>{
 }
 
 // obtener un registro por id
-export const getOneById = async (id)=>{
+export const getOneTeamById = async (id)=>{
     try {
         const data = await fetch(`${url}/${id}`);
         const result = await data.json();

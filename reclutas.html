@@ -114,6 +114,10 @@
               <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
             </div>
             <div class="mb-2">
+              <label for="imagen" class="form-label text-light">URL img</label>
+              <input type="text" name="imagen" class="form-control" id="imagen" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
               <label for="edad" class="form-label text-light">Edad</label>
               <input type="number" name="edad" class="form-control" id="edad" aria-describedby="emailHelp">
             </div>
@@ -162,10 +166,14 @@
         </div>
         <div class="modal-body bg-dark " id="modalCRU">
           <form id="reclutaUp">
-            <input type="hidden" name="id" class="form-control" id="idUp" value="" aria-describedby="emailHelp">
+            
             <div class="mb-2">
               <label for="nombreUp" class="form-label text-light">Nombre</label>
               <input type="text" name="nombre" class="form-control" id="nombreUp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="imagenUp" class="form-label text-light">URL img</label>
+              <input type="text" name="imagen" class="form-control" id="imagenUp" aria-describedby="emailHelp">
             </div>
             <div class="mb-2">
               <label for="edadUp" class="form-label text-light">Edad</label>
@@ -193,19 +201,35 @@
               <input type="date" name="fechaIngre" class="form-control" id="fechaIngreUp" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
+              <label for="teamUp" class="form-label text-light">Seleccione un team</label>
               <select class="form-select" name="team" aria-label="Default select example" id="teamUp">
-                <option selected>Seleccione un team</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                
               </select>
             </div>
+            <input type="hidden" name="id" class="form-control" id="idUp" value="" aria-describedby="emailHelp">
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
     </div>
   </div>
+
+
+<!-- Modal  detalles -->
+<div class="modal fade" id="detallesM" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-dark" id="detailsM">
+        <!-- info -->
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
