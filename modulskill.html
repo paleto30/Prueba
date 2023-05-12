@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://kit.fontawesome.com/932c26312f.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/modulo.js" type="module" defer></script>
   <title>MODULOS SKILLS</title>
 </head>
 
@@ -68,7 +69,7 @@
           <button type="button" class="btn btn-success ms-md-5" data-bs-toggle="modal" data-bs-target="#cRecluta">Success</button>
         </div>
         <div class="col-8 col-md-8 d-flex align-items-center">
-            <input id="buscar" type="text" class="text-center" placeholder="Buscar" >
+            <input id="buscar" type="text" class="text-center" placeholder="Buscar" style="width: 90%;">
         </div>
       </div>
     </div>  
@@ -78,33 +79,17 @@
   <!-- seccion tabla -->
   <section>
     <div class="container tablas1 mt-5 rounded p-1 p-md-5">
-      <table class="table text-light">
+      <table class="table text-light text-center">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nombre Modulo</th>
+            <th scope="col">skill</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+        <tbody id="bodyModul">
+          <!-- aqui van los datos -->
         </tbody>
       </table>
     </div>
@@ -115,16 +100,28 @@
   
 
 
-  <!-- Modal -->
+  <!-- Modal registro  -->
   <div class="modal fade" id="cRecluta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header bg-dark">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">REGISTRAR MODULO</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body bg-dark">
-          ...
+          <form id="fModul">
+            <div class="mb-3">
+              <label for="nombre" class="form-label text-light">Nombre de Modulo</label>
+              <input type="text" required name="nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="skill" class="form-label text-light">Seleccione Skill</label>
+              <select class="form-select" name="skillId" aria-label="Default select example" id="skill">
+                <!-- selecion de teams -->
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
       "id": 1
     }
   ],
-  "team": [
+  "teams": [
     {
       "nombre": "ARTEMIS",
       "trainer": "VERMEN",
@@ -30,7 +30,7 @@
       "id": 3
     }
   ],
-  "skill": [
+  "skills": [
     {
       "nombre": "JAVA",
       "id": 1
@@ -48,6 +48,17 @@
       "id": 4
     }
   ],
-  "moduloSkill": [],
-  "evaluacion": []
+  "moduloSkills": [
+    {
+      "nombre": "WEB BASICO",
+      "skillId": 2,
+      "id": 1
+    },
+    {
+      "nombre": "BACKEND",
+      "skillId": 1,
+      "id": 2
+    }
+  ],
+  "evaluaciones": []
 }

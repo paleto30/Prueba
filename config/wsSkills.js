@@ -15,24 +15,20 @@ let ws  = {
                     <th scope="row">${element.id}</th>
                     <td>${element.nombre}</td>
                     <td>
-                    <!-- <button type="button" class="btn btn-info btns info" data-category="${element.id}">
-                        <i class="fa-solid fa-circle-info infos info" data-category="${element.id}"></i>
-                    </button> -->
-                    <button type="button" class="btn btn-warning btns edit" data-skill="${element.id}"
+                   
+                    <button type="button" class="btn btnUpdate btns edit" data-skill="${element.id}"
                         data-bs-toggle="modal" data-bs-target="#upSkill">
                         <i class="fa-solid fa-pen-to-square infos edit" style="color: #ffffff;"
                         data-skill="${element.id}"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btns drop" data-skill="${element.id}">
+                    <button type="button" class="btn btnDelete btns drop" data-skill="${element.id}">
                         <i class="fa-solid fa-trash infos drop" style="color: #ffffff;" data-skill="${element.id}"></i>
                     </button>
                     </td>
                 </tr>
             `
         });
-
         return html;
-
     },
 
     async getRegisterForUpdate(id){
@@ -50,9 +46,6 @@ let ws  = {
                     <th scope="row">${element.id}</th>
                     <td>${element.nombre}</td>
                     <td>
-                    <!-- <button type="button" class="btn btn-info btns info" data-category="${element.id}">
-                        <i class="fa-solid fa-circle-info infos info" data-category="${element.id}"></i>
-                    </button> -->
                     <button type="button" class="btn btn-warning btns edit" data-skill="${element.id}"
                         data-bs-toggle="modal" data-bs-target="#upSkill">
                         <i class="fa-solid fa-pen-to-square infos edit" style="color: #ffffff;"
@@ -67,7 +60,6 @@ let ws  = {
         });
         return html;
     },
-
 
 }
 

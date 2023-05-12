@@ -1,6 +1,6 @@
 
 
-const url = " http://localhost:4500/team"
+const url = " http://localhost:4500/teams"
 
 // obtener todos los registros
 export const getAllTeams = async ()=>{

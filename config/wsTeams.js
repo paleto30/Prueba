@@ -19,12 +19,12 @@ let ws = {
                     <!-- <button type="button" class="btn btn-info btns info" data-category="${element.id}">
                         <i class="fa-solid fa-circle-info infos info" data-category="${element.id}"></i>
                     </button> -->
-                    <button type="button" class="btn btn-warning btns edit" data-team="${element.id}"
+                    <button type="button" class="btn btnUpdate btns edit" data-team="${element.id}"
                         data-bs-toggle="modal" data-bs-target="#cTeamUp">
                         <i class="fa-solid fa-pen-to-square infos edit" style="color: #ffffff;"
                         data-team="${element.id}"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btns drop" data-team="${element.id}">
+                    <button type="button" class="btn btns btnDelete drop" data-team="${element.id}">
                         <i class="fa-solid fa-trash infos drop" style="color: #ffffff;" data-team="${element.id}"></i>
                     </button>
                     </td>

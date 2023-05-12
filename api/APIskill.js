@@ -1,6 +1,6 @@
 
 
-const url = "http://localhost:4500/skill";
+const url = "http://localhost:4500/skills";
 
 
 

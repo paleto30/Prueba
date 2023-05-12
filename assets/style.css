@@ -43,7 +43,7 @@ body {
 }
 
 .menuss :hover {
-    color: purple !important;
+    color: rgb(5, 222, 238) !important;
 }
 
 .titulo {
@@ -85,6 +85,22 @@ body {
 .items{
     list-style: none;
 }
+
+
+
+.btnUpdate{
+    border: 1px solid blue;
+}
+
+.btnDelete{
+    border: 1px solid red;
+}
+
+.btnInfo{
+    border: 1px solid aqua;
+}
+
+
 
 @media screen and (mix-width: 300px) {
 

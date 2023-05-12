@@ -33,15 +33,15 @@ let ws = {
                     <td>${element.nombre}</td>
                     <td>${element.edad}</td>
                     <td>
-                    <button type="button" class="btn btn-info btns info" data-recluta="${element.id}" data-bs-toggle="modal" data-bs-target="#detallesM">
-                        <i class="fa-solid fa-circle-info infos info" data-recluta="${element.id}"></i>
+                    <button type="button" class="btn btns info btnInfo" data-recluta="${element.id}" data-bs-toggle="modal" data-bs-target="#detallesM">
+                        <i class="fa-solid fa-circle-info infos info" data-recluta="${element.id}" style="color: white"></i>
                     </button>
-                    <button type="button" class="btn btn-warning btns edit" data-recluta="${element.id}"
+                    <button type="button" class="btn btns btnUpdate edit" data-recluta="${element.id}"
                         data-bs-toggle="modal" data-bs-target="#cReclutaUp">
                         <i class="fa-solid fa-pen-to-square infos edit" style="color: #ffffff;"
                         data-recluta="${element.id}"></i>
                     </button>
-                    <button type="button" class="btn btn-danger btns drop" data-recluta="${element.id}">
+                    <button type="button" class="btn btns btnDelete drop" data-recluta="${element.id}">
                         <i class="fa-solid fa-trash infos drop" style="color: #ffffff;" data-recluta="${element.id}"></i>
                     </button>
                     </td>
